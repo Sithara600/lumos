@@ -4,7 +4,7 @@ import '../../signup/signup_patient.dart'; // Import the SignupPatient page
 import '../../caregiver screen/caregiver_login.dart'; // Import the CaregiverLogin page
 
 class LoginPatient extends StatefulWidget {
-  const LoginPatient({Key? key}) : super(key: key);
+  const LoginPatient({super.key});
 
   @override
   State<LoginPatient> createState() => _LoginPatientState();

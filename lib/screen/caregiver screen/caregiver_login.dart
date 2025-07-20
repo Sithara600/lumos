@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
+import '../patient screen/login/login_patient.dart';
+import '../signup/signup_caregiver.dart';
+import 'caregiver_dashboard.dart';
 
 class CaregiverLogin extends StatefulWidget {
-  const CaregiverLogin({Key? key}) : super(key: key);
+  const CaregiverLogin({super.key});
 
   @override
   State<CaregiverLogin> createState() => _CaregiverLoginState();
@@ -59,19 +62,29 @@ class _CaregiverLoginState extends State<CaregiverLogin> {
               child: Row(
                 children: [
                   Expanded(
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(vertical: 8),
-                      decoration: BoxDecoration(
-                        color: Colors.transparent,
-                        borderRadius: BorderRadius.circular(20),
-                      ),
-                      child: Center(
-                        child: Text(
-                          'Patient',
-                          style: TextStyle(
-                            color: Colors.black,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 18,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const LoginPatient(),
+                          ),
+                        );
+                      },
+                      child: Container(
+                        padding: const EdgeInsets.symmetric(vertical: 8),
+                        decoration: BoxDecoration(
+                          color: Colors.transparent,
+                          borderRadius: BorderRadius.circular(20),
+                        ),
+                        child: Center(
+                          child: Text(
+                            'Patient',
+                            style: TextStyle(
+                              color: Colors.black,
+                              fontWeight: FontWeight.bold,
+                              fontSize: 18,
+                            ),
                           ),
                         ),
                       ),
@@ -167,7 +180,14 @@ class _CaregiverLoginState extends State<CaregiverLogin> {
                         ),
                         padding: const EdgeInsets.symmetric(vertical: 14),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const CaregiverDashboard(),
+                          ),
+                        );
+                      },
                       child: const Text(
                         'Login',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),
@@ -184,7 +204,14 @@ class _CaregiverLoginState extends State<CaregiverLogin> {
                         ),
                         padding: const EdgeInsets.symmetric(vertical: 14),
                       ),
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => const SignupCaregiver(),
+                          ),
+                        );
+                      },
                       child: const Text(
                         'Sign up',
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold, color: Colors.white),

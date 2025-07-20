@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import '../patient screen/login/login_patient.dart'; // Import the LoginPatient page
 
 class FirstScreen extends StatelessWidget {
-  const FirstScreen({Key? key}) : super(key: key);
+  const FirstScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
