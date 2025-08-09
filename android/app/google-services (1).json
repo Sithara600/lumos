@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1092630538091",
+    "project_id": "lumoss-eb4ec",
+    "storage_bucket": "lumoss-eb4ec.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092630538091:android:22679d6eafcd9a95a48e2e",
+        "android_client_info": {
+          "package_name": "com.example.lumoss"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyHS3GEtWsfbcASQOaLVowBjsVoGAU5XE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

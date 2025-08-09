@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../patient screen/login/login_patient.dart'; // Import the LoginPatient page
+import '../patient_screen/login/login_patient.dart'; // Import the LoginPatient page
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({super.key});
